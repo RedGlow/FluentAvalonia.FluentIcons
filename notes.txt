@@ -1,0 +1,14 @@
+per riempire la directory fluentui-system-icons:
+
+- quando cloni:
+  git clone --recurse-submodules <path>
+
+- quando è già clonato senza --recurse-submodules:
+  git submodule update --init --recursive
+  
+per aggiornare fluentui
+
+- cd fluentui-system-icons
+- git fetch --tags
+- git checkout 1.1.249
+- python generate.py
